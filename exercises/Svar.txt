@@ -57,3 +57,27 @@
             }
         }
         System.out.println(f);
+
+2.1 Extra
+    a. a = 15, b = 10
+    b. p = 5, q = 20
+    c. m = 48, n = 6
+    d. i = 4, j = 3
+    e. c = 3, d = 2 (då 'c' är en integer så avrundas svaret ned till närmsta heltal. Detta för att överskottet inte kan bli negativt efter en uträkning)
+    f. e = 25, f = 5 
+
+2.2 Extra
+    a. result = 27
+    b. result = 155
+    c. result = 693 ((( 1 * 7) * 9) * 11) Tänkte fel här först
+    d. result = 5
+    e. result = 0
+    f. result = 30
+
+2.3 Extra
+    a. result = 25
+    b. result = 15 (blir 10. när i når 5 så avslutas programmet direkt och lägger inte till mer)
+    c. result = 18 
+    d. result = 26 (glömde räkna med startvärdet på result så rätt svar blir 27 :/ )
+    e. result = 0 (rätt svar 55, läste > åt fel håll i rad 3 vilket gav mig 0. Rätt svar summerar alla tal upp till och med 10.)
+    
