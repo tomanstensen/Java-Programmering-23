@@ -71,7 +71,7 @@
     b. result = 155
     c. result = 693 ((( 1 * 7) * 9) * 11) Tänkte fel här först
     d. result = 5
-    e. result = 0
+    e. result = 0 (David ändrade parametrarna för uppgiften. rätt nytt svar är 105)
     f. result = 30
 
 2.3 Extra
