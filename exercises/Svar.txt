@@ -2,4 +2,58 @@
     b. y = 12
     c. y = 1
 
-2.2 a. 
+2.2 a. result = 10
+    b. result = 50
+    c. result = 80
+    d. result = 96 (blir en gång extra efter detta då result fortfarande är < 100. så 112 är rätt svar.)
+    e. result = 18
+
+2.3 a. result = 8
+    b. result = 89
+
+2.4 a. for(int i = 1; i <= 10; i++) {System.out.println(i);}
+    
+    b.  int i = 0;
+
+        while (i<=20) {
+            System.out.println(i);
+            i = i + 2;
+       }
+
+    c.   
+    
+        import java.util.Scanner;
+
+            public class testThings {
+                public static void main(String[] args){
+                Scanner scan = new Scanner(System.in);
+                int a;
+
+                System.out.print("Type in the number you want the multiplication table for: ");
+                a = scan.nextInt();
+
+                System.out.println("Multiplication table up to ten, for number " + a + ":");
+                for(int b = 1; b <= 10; b++){
+                System.out.println(a*b);
+                    }
+                    scan.close();
+                }
+            }
+
+    d.
+         int i = 10;
+        while (i>0){
+            System.out.println(i);
+            i--;
+        }
+
+    e.
+          int f = 0;
+        for(int i = 0; i < 20; i++){
+            if( i % 2 == 0) {continue;}
+            else { 
+            System.out.println(i);
+            f = f + i;
+            }
+        }
+        System.out.println(f);
