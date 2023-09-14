@@ -23,6 +23,7 @@ public class numbersPyramid {
             }
             System.out.print("\n");
         }
+        bacon.close();
     }
     
 }
