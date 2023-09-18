@@ -1,4 +1,4 @@
-package constructors;
+package exercises.solutions.;
 
 class Book {
     private String title;
