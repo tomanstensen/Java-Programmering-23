@@ -81,3 +81,113 @@
     d. result = 26 (glömde räkna med startvärdet på result så rätt svar blir 27 :/ )
     e. result = 0 (rätt svar 55, läste > åt fel håll i rad 3 vilket gav mig 0. Rätt svar summerar alla tal upp till och med 10.)
     
+----------------------------    
+Exercises 3
+----------------------------
+
+1. -Book Class-
+
+    public static void main(String[] args){
+        Book lotr = new Book();
+        System.out.print(lotr);
+
+        }
+
+    class Book{
+        String title;
+        String author;
+        int year;
+        
+        Book(){
+       System.out.println("Nu blev det mera!"); 
+        }
+    }
+
+2. -Student Class-
+
+public class testThings {
+    public static void main(String[] args){
+    Student hjalmar = new Student("Hjalmar", 32, 4.0);
+    System.out.println("Name: "+hjalmar.name);
+    System.out.println("Age: "+hjalmar.age);
+    System.out.println("Grade: "+hjalmar.grade);
+      
+    }
+}
+
+class Student{
+    String name;
+    int age;
+    double grade;
+
+    Student(String name, int age, double grade) {
+        this.name = name;
+        this.age = age;
+        this.grade = grade;
+        System.out.println("New student found!");
+    }
+
+}
+
+3. -Cars-
+
+public class testThings {
+    public static void main(String[] args){
+        Car bilen = new Car();
+        bilen.printDeets();
+
+        Car ford = new Car("Ford", "S-max", "2012", "Beige-gray?");
+        ford.printDeets();
+
+        Car mazda = new Car("Mazda", "Miata");
+        mazda.printDeets();
+
+        Car ferrari = new Car("Ferrari", "Testarossa", "2022");
+        ferrari.printDeets();
+        Car volvo = new Car("Volvo");
+        volvo.printDeets();
+        
+    }
+}
+
+class Car{
+    String make;
+    String model;
+    String year;
+    String color;
+
+    Car(String make, String model, String year, String color){
+        this.make = make;
+        this.model = model;
+        this.year = year;
+        this.color = color;
+        System.out.println("New car found!");
+        
+    }
+    Car(String make, String model, String year){
+        this(make, model, year, "Unknown");
+
+    }
+    Car(String make, String model){
+        this(make, model, "Unknown");
+        
+    }
+    Car(String make){
+        this(make, "Unknown");
+        
+    }
+    Car(){
+        this("Unknown");
+        
+    }
+    public void printDeets(){
+        System.out.println("Make: "+make);
+        System.out.println("Model: "+model);
+        System.out.println("Year: "+year);
+        System.out.println("Color: "+color);
+        System.out.println();
+    }
+}
+
+
+    
