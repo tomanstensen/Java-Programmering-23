@@ -1,4 +1,4 @@
-public class multipl {
+public class multiplication {
     public static void main(String[] args){
       int nummer = 6;
       
