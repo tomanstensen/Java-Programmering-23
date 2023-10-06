@@ -8,6 +8,6 @@ public class continueLoop {
             System.out.print( "Would you like to continue? Y/N: ");
             keepGoing = answer.next();
         }
-        
+        answer.close();
     }
 }

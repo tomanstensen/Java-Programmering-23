@@ -4,16 +4,12 @@ public class Player {
     private String name;
     private int score = 0;
     private int guess;
-    public Die die = new Die();
+    public Die die;
     
     public int roll(){
-        die.setFace(die.roll());
-        return die.face;
+        return die.roll();
     }
 
-    public void setName(String name){
-        this.name = name;
-    }
     public String getName(){
         return name;
     }
@@ -30,5 +26,9 @@ public class Player {
     }
     public int getScore(){
         return score;
+    }
+    public Player(String name, int sides){
+        die = new Die(sides);
+        this.name = name;
     }
 }
