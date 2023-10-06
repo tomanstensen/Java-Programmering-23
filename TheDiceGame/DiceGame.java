@@ -29,7 +29,7 @@ public class DiceGame {
         System.out.println("Guess what the die rolls.");
         System.out.println("For every correct guess you get one(1) point.");
         System.out.println("Good luck, " + playerName + "!");
-        
+        System.out.println();
         player = new Player(playerName, dieSides);
     }
 
