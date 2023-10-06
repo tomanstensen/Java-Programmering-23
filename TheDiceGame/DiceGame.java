@@ -62,7 +62,10 @@ public class DiceGame {
 
         System.out.println("The game is now over!");
         System.out.println("Playing a game of "+ rounds + " rounds, with a " + player.die.getSides() + " sided die you got a score of: " + player.getScore());
-        if (player.getScore()/rounds > 0.5 ){
+        if(player.getScore() == rounds){
+            System.out.println("Wow! Perfect score! Such impressive!");
+        }
+        else if(player.getScore()/rounds >= 0.5 ){
             System.out.println("GGWP!");
         }
         else{
