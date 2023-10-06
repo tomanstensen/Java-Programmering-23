@@ -1,5 +1,4 @@
 package TheDiceGame.Components;
-import TheDiceGame.Components.Die;
 
 public class Player {
     private String name;
