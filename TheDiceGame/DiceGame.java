@@ -19,7 +19,7 @@ public class DiceGame {
         String playerName = scanner.nextLine();
        
         System.out.println("Hello, "+playerName+"!");
-        System.out.print("To start start the game, choose how many rounds you would like to play (1 to 10): ");
+        System.out.print("To start the game, choose how many rounds you would like to play (1 to 10): ");
         rounds = scanner.nextInt();
 
         System.out.print("Please choose how many sides your dice will have: ");
