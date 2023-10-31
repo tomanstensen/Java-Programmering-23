@@ -38,14 +38,14 @@ public class DiceGame {
         while(thisRound <= rounds){
             System.out.print("Make your guess!(up to "+player.die.getSides()+"): ");
             player.setGuess(scanner.nextInt());
-            int youRolled = player.roll();
-            System.out.println("The die has been cast! You rolled a: " + youRolled);
+            player.roll();
+            System.out.println("The die has been cast! You rolled a: " + player.getDieValue());
 
-            if(player.getGuess() == youRolled){
+            if(player.getGuess() == player.getDieValue()){
                 System.out.println("Well done! You guessed it!");
                 player.setScore(player.getScore()+1);
             }
-            else if(player.getGuess() == youRolled + 1 || player.getGuess() ==  youRolled - 1){
+            else if(player.getGuess() == player.getDieValue() + 1 || player.getGuess() ==  player.getDieValue() - 1){
                 System.out.println("Oooh! So close!");
             }
             else{

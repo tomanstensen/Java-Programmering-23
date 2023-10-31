@@ -5,9 +5,12 @@ public class Die{
     private int face;
 
     private Random random = new Random();
-    public int roll(){
-        face = random.nextInt(sides);
-        return face+1;
+    public void roll(){
+        face = random.nextInt(sides) + 1;
+    }
+
+    public int getFace() {
+        return face;
     }
 
     public int getSides(){

@@ -6,8 +6,8 @@ public class Player {
     private int guess;
     public Die die;
     
-    public int roll(){
-        return die.roll();
+    public void roll(){
+        die.roll();
     }
 
     public String getName(){
@@ -30,5 +30,9 @@ public class Player {
     public Player(String name, int sides){
         die = new Die(sides);
         this.name = name;
+    }
+
+    public int getDieValue() {
+        return die.getFace();
     }
 }
